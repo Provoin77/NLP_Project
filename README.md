@@ -1,4 +1,5 @@
-# NLP Project: исследование RAG для задачи Question Answering
+# NLP Project:  Исследование влияния Retrieval-Augmented Generation на качество ответов и уровень галлюцинаций в задаче Question Answering
+
 
 Проект посвящён сравнению классических и LLM-подходов в задаче **Question Answering**. Основная идея работы — проверить, помогает ли подход **Retrieval-Augmented Generation (RAG)** повысить качество ответов и снизить количество неподтверждённых ответов по сравнению с LLM, которая отвечает без внешнего контекста.
 
@@ -274,95 +275,18 @@ LLM без RAG дала нерелевантный ответ:
 
 ## Структура репозитория
 
-Примерная структура репозитория:
+Структура репозитория:
 
 ```text
 .
 ├── NLP_Project.ipynb          # основной ноутбук с кодом, экспериментами и выводами
-├── Отчёт.docx                 # технический отчёт по проекту
+├── Технический отчёт.docx     # технический отчёт по проекту
 ├── README.md                  # описание проекта
-└── requirements.txt           # зависимости, если файл добавлен отдельно
 ```
 
-Если в репозиторий также добавлена презентация, её можно разместить отдельно:
-
-```text
-├── presentation.pptx          # презентация по проекту
-```
 
 ---
 
-## Установка и запуск
-
-### 1. Клонировать репозиторий
-
-```bash
-git clone <URL_ВАШЕГО_РЕПОЗИТОРИЯ>
-cd <НАЗВАНИЕ_РЕПОЗИТОРИЯ>
-```
-
-### 2. Создать виртуальное окружение
-
-```bash
-python -m venv venv
-```
-
-Для Windows:
-
-```bash
-venv\Scripts\activate
-```
-
-Для Linux / macOS:
-
-```bash
-source venv/bin/activate
-```
-
-### 3. Установить зависимости
-
-Если в репозитории есть `requirements.txt`:
-
-```bash
-pip install -r requirements.txt
-```
-
-Если файла зависимостей нет, можно установить основные библиотеки вручную:
-
-```bash
-pip install pandas numpy scikit-learn matplotlib seaborn tqdm datasets transformers sentence-transformers accelerate torch
-```
-
-### 4. Запустить ноутбук
-
-```bash
-jupyter notebook NLP_Project.ipynb
-```
-
-Или открыть ноутбук в VS Code / Google Colab.
-
----
-
-## Возможные зависимости
-
-Для запуска проекта могут потребоваться:
-
-```text
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
-tqdm
-datasets
-transformers
-sentence-transformers
-accelerate
-torch
-jupyter
-```
-
----
 
 ## Использованные источники
 
@@ -376,8 +300,5 @@ jupyter
 
 ---
 
-## Автор
 
 Проект выполнен в рамках дисциплины по NLP.
-
-Автор: Прохоров Д.Д.
